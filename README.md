@@ -20,7 +20,7 @@
 
  1.下载并配置python环境，参考教程（https://blog.csdn.net/sensen_kiss/article/details/141940274）
 
-2.安装 wkhtmltox，https://wkhtmltopdf.org/downloads.html，安装后将 bin 目录加入到环境变量，参考教程（http://www.gocit.cn/posts/14.html）
+2.安装 wkhtmltox，地址(https://wkhtmltopdf.org/downloads.html)，安装后将bin目录加入到环境变量，参考教程（http://www.gocit.cn/posts/14.html）
 
 3.克隆本仓库到本地，参考教程（https://blog.csdn.net/m0_63564748/article/details/148012046）
 
