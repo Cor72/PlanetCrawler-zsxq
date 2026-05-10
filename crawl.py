@@ -20,23 +20,23 @@ TARGET_YEAR = 2026  # <--- 修改这里：你想爬取哪一年？
 ZSXQ_ACCESS_TOKEN = 'C5000000-12F9-4503-B272-C712345671AF_76Aasfq23456yu'    # 必须修改为最新的Token
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/567.00 (KHTML, like Gecko) Chrome/111.1.1.1 Safari/347.36'
 GROUP_ID = '554555555555'                         # 知识星球中的小组ID
+PDF_FILE_NAME = '文件.pdf'                       # 生成PDF文件的名字
 # =============================================
 
 # 以下为脚本默认配置，通常不需要修改
-PDF_FILE_NAME = 'PlantCrawl.pdf'
-DOWLOAD_PICS = False
-DOWLOAD_COMMENTS = True
-ONLY_DIGESTS = False
-FROM_DATE_TO_DATE = False  # 默认值，会被主程序覆盖
+DOWLOAD_PICS = True                               # 是否下载图片 True | False 下载会导致程序变慢
+DOWLOAD_COMMENTS = True                           # 是否下载评论
+ONLY_DIGESTS = False                              # True-只精华 | False-全部
+FROM_DATE_TO_DATE = False                         # 按时间区间下载
+DELETE_PICS_WHEN_DONE = True                      # 运行完毕后是否删除下载的图片
+DELETE_HTML_WHEN_DONE = True                      # 运行完毕后是否删除生成的HTML
+COUNTS_PER_TIME = 30                              # 每次请求加载几个主题 最大可设置为30
+DEBUG = False                                     # DEBUG开关
+DEBUG_NUM = 120                                   # DEBUG时 跑多少条数据后停止 需与COUNTS_PER_TIME结合考虑
+SLEEP_FLAG = True                                 # 请求之间是否SLEEP避免请求过于频繁
+SLEEP_SEC = 2                                     # SLEEP秒数 SLEEP_FLAG=True时生效
 EARLY_DATE = ''
 LATE_DATE = ''
-DELETE_PICS_WHEN_DONE = True
-DELETE_HTML_WHEN_DONE = True
-COUNTS_PER_TIME = 30
-DEBUG = False
-DEBUG_NUM = 120
-SLEEP_FLAG = True
-SLEEP_SEC = 2
 
 html_template = """
 <!DOCTYPE html>
